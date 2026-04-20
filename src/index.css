@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Urbanist:wght@500;600;700&display=swap');
+
+:root {
+  --display: 'Cinzel', serif;
+  --serif: 'Fraunces', serif;
+  --sans: 'Urbanist', sans-serif;
+  --night: #050a25;
+  --ice: #dbe6ff;
+  --silver: #b2c2e8;
+  --white: #f7f8ff;
+  --gold: #ff9b57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 74% 16%, rgba(255, 123, 61, 0.2), transparent 32%),
+    radial-gradient(circle at 18% 86%, rgba(53, 87, 196, 0.2), transparent 35%),
+    linear-gradient(170deg, #080f31 0%, #060924 48%, #030512 100%);
+  color: var(--white);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1.2px);
+  background-size: 4px 4px;
+  opacity: 0.12;
+  transform: scale(1.4);
+}
+
+body::after {
+  background: linear-gradient(to top, rgba(2, 4, 14, 0.8), rgba(2, 4, 14, 0));
+}
