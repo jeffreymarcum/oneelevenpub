@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import logoAsset from './assets/logo.png'
 
 import './App.css'
 
@@ -26,7 +27,7 @@ function App() {
           <div className="hero-brand" aria-label="One Eleven Publishing logo">
             {logoAvailable ? (
               <img
-                src="/logo.png"
+                src={logoAsset}
                 alt="One Eleven Publishing"
                 className="hero-logo"
                 onError={() => setLogoAvailable(false)}
@@ -41,8 +42,9 @@ function App() {
           <p className="kicker">Independent imprint</p>
           <h1>Stories Worth the Summit</h1>
           <p className="intro">
-            One Eleven Publishing curates bold voices, crafted books, and timeless
-            editions inspired by wilderness, wonder, and human resilience.
+            One Eleven Publishing curates a bold voice, crafted books, and timeless
+            editions inspired by wilderness, wonder, and human resilience — where the
+            valley holds as much truth as the summit.
           </p>
           <div className="hero-actions">
             <button type="button">Explore titles</button>
@@ -82,7 +84,7 @@ function App() {
 
       <footer id="contact">
         <p>One Eleven Publishing | Est. 2026</p>
-        <a href="mailto:hello@oneelevenpublishing.com">hello@oneelevenpublishing.com</a>
+        <a href="mailto:support@oneelevenpub.com">support@oneelevenpub.com</a>
       </footer>
     </div>
   )
