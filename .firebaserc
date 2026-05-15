@@ -1,5 +1,22 @@
 {
   "projects": {
-    "default": "one-eleven-pub"
+    "default": "one-eleven-pub",
+    "prod": "one-eleven-pub-production"
+  },
+  "targets": {
+    "one-eleven-pub": {
+      "hosting": {
+        "development": [
+          "one-eleven-pub-b71f8"
+        ]
+      }
+    },
+    "one-eleven-pub-production": {
+      "hosting": {
+        "production": [
+          "one-eleven-pub-production"
+        ]
+      }
+    }
   }
 }
